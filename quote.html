@@ -1,299 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Free Quote - Hawaii Wiring Tech</title>
-      <style>
-                * {
-                              margin: 0;
-                              padding: 0;
-                              box-sizing: border-box;
-                }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Quote - Hawaii Wiring Tech</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-                body {
-                              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                              background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                              min-height: 100vh;
-                              padding: 20px;
-                }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
 
-                .container {
-                              max-width: 600px;
-                              margin: 0 auto;
-                              background: white;
-                              border-radius: 10px;
-                              box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-                              overflow: hidden;
-                }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
 
-                .header {
-                              background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                              color: white;
-                              padding: 30px 20px;
-                              text-align: center;
-                }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
 
-                .header h1 {
-                              font-size: 28px;
-                              margin-bottom: 5px;
-                }
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
 
-                .header p {
-                              font-size: 14px;
-                              opacity: 0.9;
-                }
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
 
-                .form-content {
-                              padding: 30px;
-                }
+        .form-content {
+            padding: 30px;
+        }
 
-                .form-group {
-                              margin-bottom: 20px;
-                }
+        .form-group {
+            margin-bottom: 20px;
+        }
 
-                label {
-                              display: block;
-                              margin-bottom: 8px;
-                              color: #333;
-                              font-weight: 500;
-                              font-size: 14px;
-                }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+            font-size: 14px;
+        }
 
-                input[type="text"],
-                input[type="email"],
-                input[type="tel"],
-                select,
-                textarea {
-                              width: 100%;
-                              padding: 12px;
-                              border: 1px solid #ddd;
-                              border-radius: 5px;
-                              font-size: 14px;
-                              font-family: inherit;
-                              transition: border-color 0.3s;
-                }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
 
-                input[type="text"]:focus,
-                input[type="email"]:focus,
-                input[type="tel"]:focus,
-                select:focus,
-                textarea:focus {
-                              outline: none;
-                              border-color: #667eea;
-                              box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-                }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
 
-                textarea {
-                              resize: vertical;
-                              min-height: 120px;
-                }
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
 
-                button {
-                              width: 100%;
-                              padding: 14px;
-                              background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                              color: white;
-                              border: none;
-                              border-radius: 5px;
-                              font-size: 16px;
-                              font-weight: 600;
-                              cursor: pointer;
-                              transition: transform 0.2s, box-shadow 0.2s;
-                }
+        button {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
 
-                button:hover {
-                              transform: translateY(-2px);
-                              box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
-                }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
 
-                button:active {
-                              transform: translateY(0);
-                }
+        button:active {
+            transform: translateY(0);
+        }
 
-                .success-message {
-                              display: none;
-                              background: #4caf50;
-                              color: white;
-                              padding: 15px;
-                              border-radius: 5px;
-                              margin-bottom: 20px;
-                              text-align: center;
-                              font-weight: 500;
-                }
+        .success-message {
+            display: none;
+            background: #4caf50;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 500;
+        }
 
-                .error-message {
-                              display: none;
-                              background: #f44336;
-                              color: white;
-                              padding: 15px;
-                              border-radius: 5px;
-                              margin-bottom: 20px;
-                              text-align: center;
-                              font-weight: 500;
-                }
+        .error-message {
+            display: none;
+            background: #f44336;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 500;
+        }
 
-                .required {
-                              color: #f44336;
-                }
+        .required {
+            color: #f44336;
+        }
 
-                .loading {
-                              display: none;
-                              text-align: center;
-                              color: #667eea;
-                              font-weight: 500;
-                }
+        .loading {
+            display: none;
+            text-align: center;
+            color: #667eea;
+            font-weight: 500;
+        }
 
-                .spinner {
-                              display: inline-block;
-                              width: 20px;
-                              height: 20px;
-                              border: 3px solid #f3f3f3;
-                              border-top: 3px solid #667eea;
-                              border-radius: 50%;
-                              animation: spin 1s linear infinite;
-                              margin-right: 10px;
-                }
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+        }
 
-                @keyframes spin {
-                              0% { transform: rotate(0deg); }
-                              100% { transform: rotate(360deg); }
-                }
-            </style>
-  </head>
-  <body>
-        <div class="container">
-                  <div class="header">
-                                <h1>Get Your Free Quote</h1>
-                              <p>Professional Electrical Services for Hawaii</p>
-                  </div>div>
-                
-                <div class="form-content">
-                            <div class="success-message" id="successMessage">
-                                            ✓ Thank you! We've received your quote request. We'll contact you within 24 hours.
-                            </div>div>
-                            
-                            <div class="error-message" id="errorMessage">
-                                            ✗ An error occurred. Please try again.
-                            </div>div>
-                            
-                            <form id="quoteForm">
-                                            <div class="form-group">
-                                                                <label for="name">Full Name <span class="required">*</span>span></label>label>
-                                                                <input type="text" id="name" name="name" required>
-                                            </div>div>
-                                            
-                                            <div class="form-group">
-                                                                <label for="phone">Phone Number <span class="required">*</span>span></label>label>
-                                                                <input type="tel" id="phone" name="phone" required>
-                                            </div>div>
-                                            
-                                            <div class="form-group">
-                                                                <label for="email">Email Address <span class="required">*</span>span></label>label>
-                                                                <input type="email" id="email" name="email" required>
-                                            </div>div>
-                                            
-                                            <div class="form-group">
-                                                                <label for="service">Service Type <span class="required">*</span>span></label>label>
-                                                                <select id="service" name="service" required>
-                                                                                        <option value="">-- Select a service --</option>option>
-                                                                                        <option value="Residential Electrical">Residential Electrical</option>option>
-                                                                                        <option value="Commercial Electrical">Commercial Electrical</option>option>
-                                                                                        <option value="Panel Upgrades">Panel Upgrades</option>option>
-                                                                                        <option value="Lighting Installation">Lighting Installation</option>option>
-                                                                                        <option value="Maintenance & Inspections">Maintenance & Inspections</option>option>
-                                                                                        <option value="Other">Other</option>option>
-                                                                </select>select>
-                                            </div>div>
-                                            
-                                            <div class="form-group">
-                                                                <label for="details">Project Details <span class="required">*</span>span></label>label>
-                                                                <textarea id="details" name="details" placeholder="Tell us about your electrical needs..." required></textarea>
-                                            </div>div>
-                                            
-                                            <div class="loading" id="loading">
-                                                                <div class="spinner"></div>div>
-                                                                Submitting your request...
-                                            </div>div>
-                                            
-                                            <button type="submit">Get My Free Quote</button>button>
-                            </form>form>
-                </div>div>
-        </div>div>
-      
-      <script>
-                const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyQsbc8Ti2ZGeHZ62NwrQrPcceMBJQ2shkRHZFw_MsA4L_4Dw4l8HCavfVYillkAOM/usercontent";
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Get Your Free Quote</h1>
+            <p>Professional Electrical Services for Hawaii</p>
+        </div>
 
-                // Google Analytics 4 - Optional configuration
-                const GA_MEASUREMENT_ID = "YOUR_GA_MEASUREMENT_ID";
+        <div class="form-content">
+            <div class="success-message" id="successMessage">
+                ✓ Thank you! We've received your quote request. We'll contact you within 24 hours.
+            </div>
 
-                // Google Ads conversion tracking - Optional configuration
-                const GOOGLE_ADS_CONVERSION_ID = "YOUR_GOOGLE_ADS_CONVERSION_ID";
-                const GOOGLE_ADS_CONVERSION_LABEL = "YOUR_GOOGLE_ADS_CONVERSION_LABEL";
+            <div class="error-message" id="errorMessage">
+                ✗ An error occurred. Please try again.
+            </div>
 
-                const form = document.getElementById("quoteForm");
-                const successMessage = document.getElementById("successMessage");
-                const errorMessage = document.getElementById("errorMessage");
-                const loading = document.getElementById("loading");
+            <form id="quoteForm">
+                <div class="form-group">
+                    <label for="name">Full Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-                form.addEventListener("submit", async (e) => {
-                              e.preventDefault();
+                <div class="form-group">
+                    <label for="phone">Phone Number <span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
 
-                              // Reset messages
-                              successMessage.style.display = "none";
-                              errorMessage.style.display = "none";
-                              loading.style.display = "block";
+                <div class="form-group">
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-                              // Get form data
-                              const formData = new FormData(form);
-                              const data = {
-                                                name: formData.get("name"),
-                                                phone: formData.get("phone"),
-                                                email: formData.get("email"),
-                                                service: formData.get("service"),
-                                                details: formData.get("details")
-                              };
+                <div class="form-group">
+                    <label for="service">Service Type <span class="required">*</span></label>
+                    <select id="service" name="service" required>
+                        <option value="">-- Select a service --</option>
+                        <option value="Residential Electrical">Residential Electrical</option>
+                        <option value="Commercial Electrical">Commercial Electrical</option>
+                        <option value="Panel Upgrades">Panel Upgrades</option>
+                        <option value="Lighting Installation">Lighting Installation</option>
+                        <option value="Maintenance & Inspections">Maintenance & Inspections</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
 
-                              try {
-                                                // Send data to Google Apps Script
-                                                const response = await fetch(APPS_SCRIPT_URL, {
-                                                                      method: "POST",
-                                                                      mode: "no-cors",
-                                                                      headers: {
-                                                                                                "Content-Type": "application/json"
-                                                                        },
-                                                                      body: JSON.stringify(data)
-                                                });
+                <div class="form-group">
+                    <label for="details">Project Details <span class="required">*</span></label>
+                    <textarea id="details" name="details" placeholder="Tell us about your electrical needs..." required></textarea>
+                </div>
 
-                                                // Since we're using no-cors mode, we can't read the response
-                                                // Assume success after a delay
-                                                setTimeout(() => {
-                                                                      loading.style.display = "none";
-                                                                      successMessage.style.display = "block";
-                                                                      form.reset();
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    Submitting your request...
+                </div>
 
-                                                                      // Track conversion in Google Ads (if configured)
-                                                                      if (GOOGLE_ADS_CONVERSION_ID !== "YOUR_GOOGLE_ADS_CONVERSION_ID") {
-                                                                                                gtag('event', 'conversion', {
-                                                                                                                              'send_to': GOOGLE_ADS_CONVERSION_ID + '/' + GOOGLE_ADS_CONVERSION_LABEL
-                                                                                                  });
-                                                                      }
+                <button type="submit">Get My Free Quote</button>
+            </form>
+        </div>
+    </div>
 
-                                                                      // Log to Google Analytics (if configured)
-                                                                      if (GA_MEASUREMENT_ID !== "YOUR_GA_MEASUREMENT_ID") {
-                                                                                                gtag('event', 'quote_request', {
-                                                                                                                              'event_category': 'engagement',
-                                                                                                                              'event_label': data.service
-                                                                                                  });
-                                                                      }
-                                                }, 500);
+    <script>
+        const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyQsbc8Ti2ZGeHZ62NwrQrPcceMBJQ2shkRHZFw_MsA4L_4Dw4l8HCavfVYillkAOM/usercontent";
 
-                              } catch (error) {
-                                                console.error("Error:", error);
-                                                loading.style.display = "none";
-                                                errorMessage.style.display = "block";
-                              }
+        // Google Analytics 4 - Optional configuration
+        const GA_MEASUREMENT_ID = "YOUR_GA_MEASUREMENT_ID";
+
+        // Google Ads conversion tracking - Optional configuration
+        const GOOGLE_ADS_CONVERSION_ID = "YOUR_GOOGLE_ADS_CONVERSION_ID";
+        const GOOGLE_ADS_CONVERSION_LABEL = "YOUR_GOOGLE_ADS_CONVERSION_LABEL";
+
+        const form = document.getElementById("quoteForm");
+        const successMessage = document.getElementById("successMessage");
+        const errorMessage = document.getElementById("errorMessage");
+        const loading = document.getElementById("loading");
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            // Reset messages
+            successMessage.style.display = "none";
+            errorMessage.style.display = "none";
+            loading.style.display = "block";
+
+            // Get form data
+            const formData = new FormData(form);
+            const data = {
+                name: formData.get("name"),
+                phone: formData.get("phone"),
+                email: formData.get("email"),
+                service: formData.get("service"),
+                details: formData.get("details")
+            };
+
+            try {
+                // Send data to Google Apps Script
+                const response = await fetch(APPS_SCRIPT_URL, {
+                    method: "POST",
+                    mode: "no-cors",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(data)
                 });
-      </script>
-  </body>
-</html
+
+                // Since we're using no-cors mode, we can't read the response
+                // Assume success after a delay
+                setTimeout(() => {
+                    loading.style.display = "none";
+                    successMessage.style.display = "block";
+                    form.reset();
+
+                    // Track conversion in Google Ads (if configured)
+                    if (GOOGLE_ADS_CONVERSION_ID !== "YOUR_GOOGLE_ADS_CONVERSION_ID") {
+                        gtag('event', 'conversion', {
+                            'send_to': GOOGLE_ADS_CONVERSION_ID + '/' + GOOGLE_ADS_CONVERSION_LABEL
+                        });
+                    }
+
+                    // Log to Google Analytics (if configured)
+                    if (GA_MEASUREMENT_ID !== "YOUR_GA_MEASUREMENT_ID") {
+                        gtag('event', 'quote_request', {
+                            'event_category': 'engagement',
+                            'event_label': data.service
+                        });
+                    }
+                }, 500);
+
+            } catch (error) {
+                console.error("Error:", error);
+                loading.style.display = "none";
+                errorMessage.style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>
