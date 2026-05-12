@@ -3,241 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hawaii Wiring Tech - Electrical Solutions Built on Aloha</title><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=AW-18126839630"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-18126839630');</script>
+    <title>Hawaii Wiring Tech - Electrical Solutions Built on Aloha</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(135deg, #0f1e3a 0%, #1a2d52 100%);
-            color: white;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-        }
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 2rem;
-        }
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        .logo::before {
-            content: '⚡';
-            color: #00a8ff;
-            font-size: 2rem;
-        }
-        nav {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+        header { background: linear-gradient(135deg, #0f1e3a 0%, #1a2d52 100%); color: white; padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+        .header-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
+        .logo { font-size: 1.8rem; font-weight: bold; display: flex; align-items: center; gap: 0.5rem; }
+        .logo::before { content: '⚡'; color: #00a8ff; font-size: 2rem; }
+        nav { display: flex; gap: 2rem; align-items: center; }
+        nav a { color: white; text-decoration: none; font-size: 0.9rem; transition: color 0.3s; }
         nav a:hover { color: #00a8ff; }
-        .phone {
-            background: #00a8ff;
-            padding: 0.7rem 1.5rem;
-            border-radius: 5px;
-            font-weight: bold;
-            text-decoration: none;
-            color: white;
-            transition: background 0.3s;
-        }
+        .phone { background: #00a8ff; padding: 0.7rem 1.5rem; border-radius: 5px; font-weight: bold; text-decoration: none; color: white; transition: background 0.3s; }
         .phone:hover { background: #0088cc; }
-        .hero {
-            background: linear-gradient(135deg, #0f1e3a 0%, #1a2d52 50%, #00a8ff22 100%);
-            color: white;
-            padding: 4rem 2rem;
-            display: flex;
-            align-items: center;
-            gap: 3rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+        .hero { background: linear-gradient(135deg, #0f1e3a 0%, #1a2d52 50%, #00a8ff22 100%); color: white; padding: 4rem 2rem; display: flex; align-items: center; gap: 3rem; max-width: 1200px; margin: 0 auto; }
         .hero-content { flex: 1; }
-        .hero-label {
-            color: #00a8ff;
-            font-size: 0.9rem;
-            font-weight: bold;
-            letter-spacing: 2px;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-        }
-        .hero h1 {
-            font-size: 3.5rem;
-            line-height: 1.2;
-            margin-bottom: 1rem;
-            font-weight: 900;
-        }
+        .hero-label { color: #00a8ff; font-size: 0.9rem; font-weight: bold; letter-spacing: 2px; margin-bottom: 1rem; text-transform: uppercase; }
+        .hero h1 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 1rem; font-weight: 900; }
         .hero h1 .highlight { color: #00a8ff; }
-        .hero p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            opacity: 0.95;
-        }
-        .cta-buttons {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-            margin-bottom: 2rem;
-        }
-        .btn {
-            padding: 1rem 2rem;
-            font-size: 1rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-weight: bold;
-            text-decoration: none;
-            display: inline-block;
-        }
+        .hero p { font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95; }
+        .cta-buttons { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
+        .btn { padding: 1rem 2rem; font-size: 1rem; border: none; border-radius: 5px; cursor: pointer; transition: all 0.3s; font-weight: bold; text-decoration: none; display: inline-block; }
         .btn-primary { background: #00a8ff; color: white; }
-        .btn-primary:hover {
-            background: #0088cc;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(0,168,255,0.4);
-        }
-        .btn-secondary {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
-        }
+        .btn-primary:hover { background: #0088cc; transform: translateY(-2px); box-shadow: 0 5px 20px rgba(0,168,255,0.4); }
+        .btn-secondary { background: transparent; color: white; border: 2px solid white; }
         .btn-secondary:hover { background: white; color: #0f1e3a; }
-        .trust-badges {
-            display: flex;
-            gap: 1.5rem;
-            margin-top: 2rem;
-            flex-wrap: wrap;
-        }
-        .badge {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 0.85rem;
-            background: rgba(0,168,255,0.12);
-            border: 1px solid rgba(0,168,255,0.35);
-            border-radius: 6px;
-            padding: 0.5rem 0.9rem;
-        }
+        .trust-badges { display: flex; gap: 1.5rem; margin-top: 2rem; flex-wrap: wrap; }
+        .badge { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; background: rgba(0,168,255,0.12); border: 1px solid rgba(0,168,255,0.35); border-radius: 6px; padding: 0.5rem 0.9rem; }
         .badge-icon { font-size: 1.2rem; }
-        .hero-image {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 450px;
-        }
-        .services {
-            background: #f8f9fa;
-            padding: 4rem 2rem;
-        }
-        .section-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .section-title {
-            font-size: 2.5rem;
-            color: #0f1e3a;
-            margin-bottom: 1rem;
-            font-weight: bold;
-        }
-        .section-subtitle {
-            color: #00a8ff;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 2rem;
-        }
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-        .service-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-        }
-        .service-icon {
-            width: 70px;
-            height: 70px;
-            margin: 0 auto 1.5rem;
-            background: linear-gradient(135deg, #00a8ff 0%, #0088cc 100%);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-        }
+        .hero-image { flex: 1; display: flex; align-items: center; justify-content: center; min-height: 450px; }
+        .services { background: #f8f9fa; padding: 4rem 2rem; }
+        .section-container { max-width: 1200px; margin: 0 auto; }
+        .section-title { font-size: 2.5rem; color: #0f1e3a; margin-bottom: 1rem; font-weight: bold; }
+        .section-subtitle { color: #00a8ff; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 2rem; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .service-card { background: white; padding: 2rem; border-radius: 10px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.2); }
+        .service-icon { width: 70px; height: 70px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #00a8ff 0%, #0088cc 100%); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 2rem; }
         .service-card h3 { font-size: 1.3rem; margin-bottom: 1rem; color: #0f1e3a; }
         .service-card p { color: #666; font-size: 0.95rem; line-height: 1.5; }
-        .why-us {
-            background: linear-gradient(135deg, #0f1e3a 0%, #1a2d52 100%);
-            color: white;
-            padding: 4rem 2rem;
-        }
-        .why-us-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
+        .why-us { background: linear-gradient(135deg, #0f1e3a 0%, #1a2d52 100%); color: white; padding: 4rem 2rem; }
+        .why-us-content { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
         .why-us h2 { font-size: 2.5rem; margin-bottom: 2rem; line-height: 1.2; }
         .benefit-list { list-style: none; }
-        .benefit-list li {
-            padding: 1rem 0;
-            padding-left: 2rem;
-            position: relative;
-            font-size: 1.05rem;
-        }
-        .benefit-list li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: #00a8ff;
-            font-weight: bold;
-            font-size: 1.3rem;
-        }
-        .trust-box {
-            background: rgba(0,168,255,0.1);
-            padding: 2rem;
-            border-radius: 10px;
-            border-left: 4px solid #00a8ff;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-        }
+        .benefit-list li { padding: 1rem 0; padding-left: 2rem; position: relative; font-size: 1.05rem; }
+        .benefit-list li::before { content: '✓'; position: absolute; left: 0; color: #00a8ff; font-weight: bold; font-size: 1.3rem; }
+        .trust-box { background: rgba(0,168,255,0.1); padding: 2rem; border-radius: 10px; border-left: 4px solid #00a8ff; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
         .trust-item { display: flex; flex-direction: column; align-items: flex-start; gap: 0.4rem; }
         .trust-item-icon { font-size: 2rem; }
         .trust-item-label { font-size: 1rem; font-weight: bold; color: #00a8ff; line-height: 1.2; }
@@ -246,80 +57,20 @@
         .quote-section .section-container { max-width: 620px; }
         .quote-section .section-subtitle { text-align: center; }
         .quote-section .section-title { text-align: center; margin-bottom: 2rem; }
-        .quote-form {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-        }
+        .quote-form { background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
         .form-group { margin-bottom: 1.5rem; }
-        .form-group label {
-            display: block;
-            font-weight: 600;
-            color: #0f1e3a;
-            margin-bottom: 0.5rem;
-            font-size: 0.95rem;
-        }
-        .form-group input,
-        .form-group select {
-            width: 100%;
-            padding: 0.85rem 1rem;
-            border: 2px solid #e0e0e0;
-            border-radius: 6px;
-            font-size: 1rem;
-            font-family: inherit;
-            color: #333;
-            transition: border-color 0.3s;
-            background: white;
-        }
-        .form-group input:focus,
-        .form-group select:focus { outline: none; border-color: #00a8ff; }
-        .form-submit {
-            width: 100%;
-            padding: 1rem;
-            background: #00a8ff;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background 0.3s, transform 0.2s;
-            margin-top: 0.5rem;
-        }
+        .form-group label { display: block; font-weight: 600; color: #0f1e3a; margin-bottom: 0.5rem; font-size: 0.95rem; }
+        .form-group input, .form-group select { width: 100%; padding: 0.85rem 1rem; border: 2px solid #e0e0e0; border-radius: 6px; font-size: 1rem; font-family: inherit; color: #333; transition: border-color 0.3s; background: white; }
+        .form-group input:focus, .form-group select:focus { outline: none; border-color: #00a8ff; }
+        .form-submit { width: 100%; padding: 1rem; background: #00a8ff; color: white; border: none; border-radius: 6px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: background 0.3s, transform 0.2s; margin-top: 0.5rem; }
         .form-submit:hover { background: #0088cc; transform: translateY(-2px); }
         .trust-section { background: white; padding: 3rem 2rem; text-align: center; }
-        .trust-logos {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-        .trust-badge {
-            padding: 1rem 2rem;
-            background: #f0f0f0;
-            border-radius: 8px;
-            font-size: 0.9rem;
-            color: #0f1e3a;
-            font-weight: bold;
-        }
-        .final-cta {
-            background: linear-gradient(135deg, #00a8ff 0%, #0088cc 100%);
-            color: white;
-            padding: 3rem 2rem;
-            text-align: center;
-        }
+        .trust-logos { display: flex; gap: 2rem; justify-content: center; align-items: center; flex-wrap: wrap; margin-top: 2rem; }
+        .trust-badge { padding: 1rem 2rem; background: #f0f0f0; border-radius: 8px; font-size: 0.9rem; color: #0f1e3a; font-weight: bold; }
+        .final-cta { background: linear-gradient(135deg, #00a8ff 0%, #0088cc 100%); color: white; padding: 3rem 2rem; text-align: center; }
         .final-cta h2 { font-size: 2rem; margin-bottom: 1rem; }
         .final-cta p { font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95; }
-        footer {
-            background: #0f1e3a;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.9rem;
-        }
+        footer { background: #0f1e3a; color: white; text-align: center; padding: 2rem; font-size: 0.9rem; }
         @media (max-width: 768px) {
             nav { gap: 1rem; }
             nav a { font-size: 0.8rem; }
@@ -345,7 +96,6 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="header-content">
             <div class="logo">Hawaii WIRING TECH</div>
@@ -359,7 +109,6 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <div class="hero-label">Electrical Solutions Built on Aloha</div>
@@ -377,57 +126,34 @@
             </div>
         </div>
         <div class="hero-image">
-            <img src="./electrician.png" alt="Professional Electrician" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+            <picture>
+                <source srcset="./electrician.webp" type="image/webp">
+                <img src="./electrician.png" alt="Licensed Hawaii Wiring Tech electrician working on a residential electrical panel" width="600" height="450" fetchpriority="high" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+            </picture>
         </div>
     </section>
 
-    <!-- Services Section -->
     <section class="services" id="services">
         <div class="section-container">
             <div class="section-subtitle">Our Services</div>
             <h2 class="section-title">OUR ELECTRICAL<br>SERVICES</h2>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">⚡</div>
-                    <h3>Electrical Repair</h3>
-                    <p>Fast and reliable repairs for any electrical issue</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📋</div>
-                    <h3>Panel Upgrades</h3>
-                    <p>Modernize your electrical panel with our expert upgrades</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🏠</div>
-                    <h3>Smart Home Solutions</h3>
-                    <p>Automation & smart technology for modern living</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🚗</div>
-                    <h3>EV Charger Installation</h3>
-                    <p>Professional installation for electric vehicle chargers</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🏢</div>
-                    <h3>Commercial Electrical</h3>
-                    <p>Large-scale electrical solutions for businesses and commercial properties</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🔧</div>
-                    <h3>Maintenance & Inspections</h3>
-                    <p>Regular inspections and preventive maintenance to keep your electrical systems running safely</p>
-                </div>
+                <div class="service-card"><div class="service-icon">⚡</div><h3>Electrical Repair</h3><p>Fast and reliable repairs for any electrical issue</p></div>
+                <div class="service-card"><div class="service-icon">📋</div><h3>Panel Upgrades</h3><p>Modernize your electrical panel with our expert upgrades</p></div>
+                <div class="service-card"><div class="service-icon">🏠</div><h3>Smart Home Solutions</h3><p>Automation & smart technology for modern living</p></div>
+                <div class="service-card"><div class="service-icon">🚗</div><h3>EV Charger Installation</h3><p>Professional installation for electric vehicle chargers</p></div>
+                <div class="service-card"><div class="service-icon">🏢</div><h3>Commercial Electrical</h3><p>Large-scale electrical solutions for businesses and commercial properties</p></div>
+                <div class="service-card"><div class="service-icon">🔧</div><h3>Maintenance & Inspections</h3><p>Regular inspections and preventive maintenance to keep your electrical systems running safely</p></div>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Us -->
     <section class="why-us" id="about">
         <div class="section-container">
             <div class="why-us-content">
                 <div>
                     <h2>HAWAII'S TRUSTED<br>ELECTRICAL PARTNER.</h2>
-                    <p style="font-size: 1.05rem; opacity: 0.9; margin-bottom: 2rem;">Serving Hawaii's community with integrity, expertise, and a commitment to exceptional electrical service.</p>
+                    <p style="font-size:1.05rem;opacity:0.9;margin-bottom:2rem;">Serving Hawaii's community with integrity, expertise, and a commitment to exceptional electrical service.</p>
                     <ul class="benefit-list">
                         <li>Same-Day Service Available</li>
                         <li>Upfront Pricing - No Hidden Fees</li>
@@ -436,32 +162,15 @@
                     </ul>
                 </div>
                 <div class="trust-box">
-                    <div class="trust-item">
-                        <span class="trust-item-icon">🛡️</span>
-                        <span class="trust-item-label">Licensed & Insured</span>
-                        <span class="trust-item-sub">Fully certified & covered</span>
-                    </div>
-                    <div class="trust-item">
-                        <span class="trust-item-icon">⚡</span>
-                        <span class="trust-item-label">Same-Day Service</span>
-                        <span class="trust-item-sub">Available when you need us</span>
-                    </div>
-                    <div class="trust-item">
-                        <span class="trust-item-icon">💬</span>
-                        <span class="trust-item-label">Free Estimates</span>
-                        <span class="trust-item-sub">No obligation quotes</span>
-                    </div>
-                    <div class="trust-item">
-                        <span class="trust-item-icon">✅</span>
-                        <span class="trust-item-label">Upfront Pricing</span>
-                        <span class="trust-item-sub">No surprises, no hidden fees</span>
-                    </div>
+                    <div class="trust-item"><span class="trust-item-icon">🛡️</span><span class="trust-item-label">Licensed &amp; Insured</span><span class="trust-item-sub">Fully certified &amp; covered</span></div>
+                    <div class="trust-item"><span class="trust-item-icon">⚡</span><span class="trust-item-label">Same-Day Service</span><span class="trust-item-sub">Available when you need us</span></div>
+                    <div class="trust-item"><span class="trust-item-icon">💬</span><span class="trust-item-label">Free Estimates</span><span class="trust-item-sub">No obligation quotes</span></div>
+                    <div class="trust-item"><span class="trust-item-icon">✅</span><span class="trust-item-label">Upfront Pricing</span><span class="trust-item-sub">No surprises, no hidden fees</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Trust Indicators -->
     <section class="trust-section">
         <div class="section-container">
             <h2 class="section-title">Certified & Trusted</h2>
@@ -473,7 +182,6 @@
         </div>
     </section>
 
-    <!-- Quote Form -->
     <section class="quote-section" id="quote">
         <div class="section-container">
             <div class="section-subtitle">Get Started Today</div>
@@ -484,11 +192,11 @@
                     <input type="hidden" name="_captcha" value="false">
                     <div class="form-group">
                         <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" placeholder="e.g. John Smith" required>
+                        <input type="text" id="name" name="name" placeholder="e.g. John Smith" autocomplete="name" required>
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="e.g. 808-555-1234" required>
+                        <input type="tel" id="phone" name="phone" placeholder="e.g. 808-555-1234" autocomplete="tel" required>
                     </div>
                     <div class="form-group">
                         <label for="service">Service Needed</label>
@@ -499,7 +207,7 @@
                             <option value="Smart Home">Smart Home</option>
                             <option value="EV Charger Installation">EV Charger Installation</option>
                             <option value="Commercial Electrical">Commercial Electrical</option>
-                            <option value="Maintenance & Inspection">Maintenance & Inspection</option>
+                            <option value="Maintenance & Inspection">Maintenance &amp; Inspection</option>
                             <option value="Other">Other</option>
                         </select>
                     </div>
@@ -509,18 +217,27 @@
         </div>
     </section>
 
-    <!-- Final CTA -->
     <section class="final-cta" id="contact">
         <div class="section-container">
             <h2>NEED HELP RIGHT NOW?</h2>
             <p>Call for immediate assistance</p>
-            <a href="tel:+18087804086" class="btn btn-secondary" style="border-color: white; padding: 1.2rem 2.5rem; font-size: 1.1rem;">☎ 808-780-4086</a>
+            <a href="tel:+18087804086" class="btn btn-secondary" style="border-color:white;padding:1.2rem 2.5rem;font-size:1.1rem;">☎ 808-780-4086</a>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Hawaii Wiring Tech. All rights reserved. | Electrical Solutions Built on Aloha. Powered by ABC Aloha Crew @ abcalohacrew.com</p>
     </footer>
+
+    <!-- Google tag deferred to load after page content -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=AW-18126839630"></script>
+    <script>
+        window.addEventListener('load', function() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-18126839630');
+        });
+    </script>
 </body>
 </html>
