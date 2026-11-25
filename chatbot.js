@@ -99,8 +99,7 @@
   setTimeout(function () { window.showChatbot(false); }, 3000);
 
   /* ── 4. Gemini AI ────────────────────────────────────────────────── */
-  var GEMINI_KEY = 'AIzaSyBPEtUDpXKJ61bmcdwR8mFTjcKG6X6dKU8';
-  var GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=' + GEMINI_KEY;
+  var CHAT_URL = 'https://script.google.com/macros/s/AKfycbxmDWcAi5OsEyrQ3IJdpFzjL5LfWwGsB57Gs7lBn8UhP7gsd9wUvawGB7ozzdvSHc7u4g/exec';
   var SYSTEM = 'You are a friendly electrical services customer assistant for Hawaii Wiring Tech, a licensed electrician company serving Hawaii. ' +
     'Help customers with questions about electrical repairs, panel upgrades, circuit breakers, outlets, wiring, EV charger installation, ' +
     'smart home and automation wiring, commercial electrical work, safety inspections, permits, and scheduling. ' +
@@ -127,15 +126,15 @@
     inp.value = '';
     document.getElementById('msg-send').disabled = true;
     document.getElementById('typing').style.display = 'flex';
-    fetch(GEMINI_URL, {
+    fetch(CHAT_URL, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ contents: [{ parts: [{ text: SYSTEM + '\n\nCustomer: ' + txt }] }] })
+      headers: { 'Content-Type': 'text/plain' },
+      body: JSON.stringify({ message: txt })
     })
     .then(function (r) { return r.json(); })
     .then(function (data) {
       document.getElementById('typing').style.display = 'none';
-      addMsg(data.candidates[0].content.parts[0].text, 'bot');
+      addMsg(data.text || 'Sorry, I had trouble responding. Please call us at 808-780-4086!', 'bot');
       document.getElementById('msg-send').disabled = false;
       inp.focus();
     })
